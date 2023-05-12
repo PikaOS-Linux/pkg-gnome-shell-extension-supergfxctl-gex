@@ -13,9 +13,6 @@ Build-Depends: debhelper (>= 10),
                gettext,
                sassc
 Standards-Version: 4.1.1
-Vcs-Git: https://gitlab.com/arcmenu/ArcMenu
-Vcs-Browser: https://gitlab.com/arcmenu/ArcMenu
-Homepage: https://gitlab.com/arcmenu/ArcMenu
 
 Package: gnome-shell-extension-launch-new-instance
 Architecture: all
