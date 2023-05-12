@@ -1,4 +1,4 @@
-Source: gnome-shell-extension-launch-new-instance
+Source: gnome-shell-extension-supergfxctl-gex
 Section: gnome
 Priority: optional
 Maintainer: Marco Trevisan <marco@ubuntu.com>
@@ -14,11 +14,10 @@ Build-Depends: debhelper (>= 10),
                sassc
 Standards-Version: 4.1.1
 
-Package: gnome-shell-extension-launch-new-instance
+Package: gnome-shell-extension-supergfxctl-gex
 Architecture: all
 Depends: gnome-shell,
          ${misc:Depends},
          ${shlibs:Depends},
-         gnome-menus,
-         gir1.2-gmenu-3.0
-Description: Always launch a new application instance for GNOME Shell
+         supergfxctl
+Description: supergfxctl-gex is a frontend for supergfxctl that was born inside the asus-linux.org community

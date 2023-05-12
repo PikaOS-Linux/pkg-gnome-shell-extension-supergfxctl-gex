@@ -7,11 +7,12 @@ add-apt-repository ppa:pikaos/pika
 add-apt-repository ppa:kubuntu-ppa/backports
 # Clone Upstream
 apt install -y rpm
-wget https://dl.fedoraproject.org/pub/fedora/linux/releases/38/Everything/x86_64/os/Packages/g/gnome-shell-extension-launch-new-instance-44.0-1.fc38.noarch.rpm
-mkdir -p ./gnome-shell-extension-launch-new-instance
-cp -rvf ./debian ./gnome-shell-extension-launch-new-instance/
-cd ./gnome-shell-extension-launch-new-instance
-rpm2cpio ../gnome-shell-extension-launch-new-instance-44.0-1.fc38.noarch.rpm | cpio -idmv
+wget https://extensions.gnome.org/extension-data/supergfxctl-gexasus-linux.org.v30.shell-extension.zip
+mkdir -p ./gnome-shell-extension-supergfxctl-gex
+cp -rvf ./debian ./gnome-shell-extension-supergfxctl-gex/
+cd ./gnome-shell-extension-supergfxctl-gex
+mkdir -p ./usr/share/gnome-shell/extensions/supergfxctl-gex@asus-linux.org
+unzip ../supergfxctl-gexasus-linux.org.v30.shell-extension.zip -d /usr/share/gnome-shell/extensions/supergfxctl-gex@asus-linux.org/
 
 # Get build deps
 ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
